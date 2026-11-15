@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Agenda · Medios y Cultura Digital</title>
+  <meta name="description" content="Charlas, talleres, proyecciones y convocatorias del Departamento de Medios y Cultura Digital.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead wrap">
+    <p class="dept">Departamento de Medios y Cultura Digital</p>
+    <h1>Agenda</h1>
+    <p class="today" id="today"></p>
+  </header>
+
+  <div class="toolbar">
+    <div class="wrap">
+      <div class="chips" id="chips" role="group" aria-label="Filtrar por tipo de evento"></div>
+      <div class="seg" role="group" aria-label="Cambiar vista">
+        <button type="button" id="view-list" aria-pressed="true">Lista</button>
+        <button type="button" id="view-month" aria-pressed="false">Mes</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap" id="main" aria-live="polite">
+    <p class="state">Cargando la agenda…</p>
+  </main>
+
+  <footer class="wrap foot">
+    <span>Horarios en hora de Monterrey.</span>
+    <a href="admin.html">Administrar</a>
+  </footer>
+
+  <dialog id="detail" aria-labelledby="detail-title"></dialog>
+
+  <script src="common.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
